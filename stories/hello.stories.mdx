@@ -1,28 +1,8 @@
-import { Story, Preview, Meta } from '@storybook/addon-docs/blocks';
-
+import { Story, Meta } from '@storybook/addon-docs/blocks';
 
 <Meta title="Addon|Docs" />
 
-This declaration doesn't show up in the MDX output.
-
-## SB5 "Classic" Vue Stories
-
-Next let's declare some stories.
-
-But first let's review how it's done in SB5 for Vue.
-
-```
-storiesOf('Button', module)
-  .add('rounded', () => ({
-    template: '<my-button :rounded="true">A Button with rounded edges</my-button>',
-  }))
-```
-
-## MDX Stories
-
-Similarly, here's how we do it in the Docs MDX format:
-
-<Story name="test" height="60px">
+<Story name="test">
   {{
     template: '<div>Hello World</div>',
   }}
